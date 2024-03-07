@@ -1,0 +1,312 @@
+import React, { useState, useRef } from 'react';
+import { Box, Typography, Breadcrumbs, Grid, Divider, ListItemButton, Menu, MenuItem, Button, Avatar, CircularProgress } from '@mui/material';
+import OverView from './OverView';
+import Transactions from './Transactions';
+import CompanyDetails from './CompanyDetails';
+import ContactDetails from './ContactDetails';
+import { useLocation, useNavigate } from 'react-router-dom';
+import VendorStyles from './VendorStyles';
+import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import { useEffect } from 'react';
+// import { ReactComponent as UploadIcon } from '../../../../assets/svg/upload.svg';
+import CommonApi from '../../../../apis/CommonApi';
+import LocalStorage from '../../../../utils/LocalStorage';
+import ClientsApi from '../../../../apis/admin/clients/ClientsApi';
+import { addErrorMsg, addSuccessMsg } from '../../../../utils/utils';
+import { styled } from '@mui/material/styles';
+import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
+import Text from '../../../../components/customText/Text';
+import ReusablePopup from '../../../../components/reuablePopup/ReusablePopup';
+import deactivateImg from '../../../../assets/client/deactivateImg.svg';
+import CustomButton from '../../../../components/customButton/Button';
+
+const dataArr = ["Overview", "Transactions", "Company Details", "Contact Details"];
+
+const HtmlTooltip = styled(({ className, ...props }) => (
+    <Tooltip {...props} classes={{ popper: className }} />
+))(({ theme }) => ({
+    [`& .${tooltipClasses.tooltip}`]: {
+        backgroundColor: "#404040",
+        padding: "6px 14px",
+        minWidth: 100,
+        border: "1px solid #404040"
+    },
+    [`& .${tooltipClasses.arrow}`]: {
+        color: "#404040",
+        "&::before": {
+            backgroundColor: "#404040",
+            border: "1px solid #404040"
+        }
+    },
+}));
+
+
+export default function VendorUserProfile() {
+    const classes = VendorStyles();
+    const location = useLocation();
+    const data = location && location.state && location.state.data
+    const navigate = useNavigate();
+    // const { full_name, reference_id, avatar_url, enable_login } = location.state;
+    const [current, setCurrent] = useState("Overview");
+    const [loading, setLoading] = useState(false);
+    const [status, setStatus] = useState(data.status);
+    const [anchorEl, setAnchorEl] = useState(null);
+    const open = Boolean(anchorEl);
+    const [statusLoading, setStatusLoading] = useState(false);
+    // const [uploadBtn, setUploadBtn] = useState(false);
+    const AvatarInputRef = useRef(null);
+    const [logo, setLogo] = useState("");
+    const [deletePopup, setDeletePopup] = useState(false);
+
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+
+    const updateClientStatus = () => {
+        let data = {
+            request_id: LocalStorage.uid(),
+            status: status == 'Active' ? 'In Active' : 'Active'
+        };
+        setStatusLoading(true)
+        ClientsApi.updateStatus("vendor", location.state.data.id, data).then((response) => {
+            setTimeout(() => {
+                setStatusLoading(false)
+                if (response.data.statusCode == 1003) {                   
+                    addSuccessMsg(`User status has been ${status == 'Active' ? 'In Activated' : 'Activated'} Successfully`);
+                    setStatus(status == 'Active' ? 'In Active' : 'Active');
+                    setDeletePopup(false);
+                } else {
+                    addErrorMsg(response.data.message);
+                }
+            }, 400)
+        });
+    }
+
+
+    useEffect(() => {
+        setLogo(data.document_url); // eslint-disable-next-line 
+    }, [])
+
+    const handleChangeUpload = (value) => {
+        if (value.target.files[0].type.split('/').some(r => ['png', 'jpg', 'jpeg'].includes(r))) {
+            setLoading(true)
+            const formData = new FormData();
+            formData.append("files", value.target.files[0]);
+            formData.append("tenant_id", LocalStorage.getUserData().tenant_id);
+            CommonApi.documentUpload("ompany-logo",formData, LocalStorage.getAccessToken())
+                .then((response) => {
+                    if (response.data.statusCode == 1003) {
+                        let docInfo = response.data.data;
+                        setLogo(docInfo.document_url);
+                        uploadLogo(docInfo.id, docInfo.document_url);
+                    } else {
+                        setLoading(false)
+                        addErrorMsg(response.data.message);
+                    }
+                });
+        } else {
+            addErrorMsg("Please Upload Valid File(png,jpg,jpeg).");
+        }
+    }
+
+    const uploadLogo = (id, url) => {
+        let data = {
+            request_id: LocalStorage.uid(), documents: [
+                {
+                    new_document_id: id
+                }
+            ]
+        };
+        ClientsApi.uploadClientLogo("vendor", location.state.data.id, data).then((response) => {
+            setLoading(false)
+            if (response.data.statusCode == 1003) {
+                setLogo(response.data.data.profile_link);
+                addSuccessMsg(response.data.message);
+            } else {
+                addErrorMsg(response.data.message);
+            }
+        });
+
+    }
+
+    const openDeletPop = () => {
+        setDeletePopup(true);
+    }
+
+    const clientAvatarUpload = () => {
+        AvatarInputRef.current.click();
+    }
+    return (
+        <Box className={classes.mainContainer} px={5} py={1}>
+            <Box mx={2}>
+                <Breadcrumbs aria-label="breadcrumb">
+                    <Text mediumLabel onClick={() => navigate('/clients', { state: { page: 'vendors' } })} className={classes.breadcrumbsLink}>Vendor</Text>
+                    <Typography className={classes.breadcrumbsName}>Vendor User Profile</Typography>
+                </Breadcrumbs>
+            </Box>
+            <Box my={2} mx={2}>
+                <Grid container columnSpacing={4}>
+                    <Grid item container lg={3} md={3} sm={4} xs={12}>
+                        <Box className={classes.cardBg}>
+                            <Box width={"100%"} display={'flex'} justifyContent={'end'} px={2} pt={2}>
+                                <MoreHorizIcon sx={{ cursor: "pointer" }} onClick={handleClick} />
+                                <Menu
+                                    id="basic-menu"
+                                    anchorEl={anchorEl}
+                                    open={open}
+                                    onClose={handleClose}
+                                    anchorOrigin={{
+                                        vertical: 'bottom',
+                                        horizontal: 'center',
+                                    }}
+                                    transformOrigin={{
+                                        vertical: 'top',
+                                        horizontal: 'center',
+                                    }}
+                                    sx={{
+                                        '& .MuiPaper-root, .MuiMenu-list': {
+                                            padding: '0px ',
+                                        },
+                                    }}
+                                >
+                                    <MenuItem onClick={openDeletPop} className={classes.inactive}>
+                                        <span>{status == 'In Active' ? 'In Activate' : 'Active'}</span>
+                                        {statusLoading ? <CircularProgress color="secondary" size={"12px"} sx={{ margin: "0px 6px" }} /> : ""}
+                                    </MenuItem>
+                                </Menu>
+                            </Box>
+                            <Box sx={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }} mt={2}>
+                                <CircularProgress variant="determinate" value={data.profile_perecentage} size="122px" thickness={2} sx={{ backgroundColor: "#F2F2F2", color: "#037847", borderRadius: "100%", }} />
+                                <Box
+                                    sx={{
+                                        top: 0,
+                                        left: 0,
+                                        bottom: 0,
+                                        right: 0,
+                                        position: 'absolute',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                    }}
+                                >
+                                    <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", padding: "3px", borderRadius: "50%", backgroundColor: "#ffffff" }}>
+                                        <HtmlTooltip
+                                            placement="top"
+                                            arrow
+                                            title={
+                                                <React.Fragment>
+                                                    <Box>
+                                                        <Typography className={classes.profileTooltipText}>
+                                                            {`Profile Completion - ${data.profile_perecentage}%`}
+                                                        </Typography>
+                                                    </Box>
+                                                </React.Fragment>
+                                            }
+                                        >
+                                            <Avatar
+                                                alt='Logo'
+                                                src={logo}
+                                                sx={{ width: "110px", height: "110px", }}
+                                            />
+                                        </HtmlTooltip>
+                                    </Box>
+                                </Box>
+                            </Box>
+                            <Box py={1} mt={1} textAlign={'center'}>
+                                <Button className={classes.uploadBtn} onClick={clientAvatarUpload}>
+                                    {`Edit Logo`}
+                                    {loading ? <CircularProgress color="secondary" size={"12px"} sx={{ margin: "0px 2px" }} /> : null}
+                                </Button>
+                                <input
+                                    name={'client_avatar'}
+                                    type='file'
+                                    onChange={handleChangeUpload}
+                                    ref={AvatarInputRef}
+                                    style={{ display: 'none' }}
+                                />
+                            </Box>
+                            <Grid item lg={12} px={3} textAlign='center' py={1}>
+                                <Text largeBlack noWrap>{data.name}</Text>
+                            </Grid>
+                            <Grid item lg={12} px={3} textAlign='center' pb={2}>
+                                <Text mediumLabel noWrap>{data.reference_id}</Text>
+                            </Grid>
+                            <Box px={3}>
+                                <Divider />
+                            </Box>
+                            <Box p={3} sx={{
+                                maxHeight: "33vh",
+                                overflow: "auto",
+                                '&::-webkit-scrollbar': {
+                                    width: '4px',
+                                },
+                                '&::-webkit-scrollbar-track': {
+                                    '-webkit-box-shadow': 'inset 0 0 6px #ffffff',
+                                },
+                                '&::-webkit-scrollbar-thumb': {
+                                    backgroundColor: '#C7CCD3',
+                                    outline: '1px solid #C7CCD3',
+                                    borderRadius: "4px",
+                                }
+                            }}>
+                                {
+                                    dataArr.map((item, key) => (
+                                        <ListItemButton
+                                            key={key}
+                                            className={`${classes.listItems} ${current === item ? classes.listItemsActive : null}`}
+                                            onClick={() => setCurrent(item)}
+                                        >
+                                            {item}
+                                        </ListItemButton>
+                                    ))}
+                            </Box>
+                        </Box>
+                    </Grid>
+                    <Grid item lg={9} md={9} sm={8} xs={12}>
+                        <Box className={classes.cardBg}>
+                            {
+                                current === "Overview" ? <OverView id={data.id}/> : null
+                            }
+                            {
+                                current === "Transactions" ? <Transactions /> : null
+                            }
+                            {
+                                current === "Company Details" ? <CompanyDetails id={data && data.id} /> : null
+                            }
+                            {
+                                current === "Contact Details" ? <ContactDetails id={data && data.id} /> : null
+                            }
+                        </Box>
+                    </Grid>
+                    <ReusablePopup iconHide white openPopup={deletePopup} setOpenPopup={setDeletePopup} fullWidth>
+                        <Box sx={{ margin: "20px", }}>
+                            <Box sx={{ width: "100%", display: 'flex', justifyContent: 'center' }}>
+                                <img src={deactivateImg} alt="warning" />
+                            </Box>
+                            <Box my={3}>
+                                <Typography my={1} sx={{ color: "#54595E", font: '18px  Nunito , Nunito Sans, sans-serif', fontWeight: 600, textAlign: 'center' }}>
+                                    Are You Sure?
+                                </Typography>
+                                <Typography my={1} sx={{ color: "#54595E99", font: '14px  Nunito , Nunito Sans, sans-serif', fontWeight: 400, textAlign: 'center' }}>
+                                    Do You Really Wish To {status == 'Active' ? 'In Activate' : 'Activate'} the Vendor.
+                                </Typography>
+                            </Box>
+                            <Box my={2} sx={{ width: '100%', display: 'flex', justifyContent: 'center', gap: '20px' }} >
+                                <CustomButton no onClick={() => setDeletePopup(false)}>
+                                    No
+                                </CustomButton>
+                                <CustomButton popupDelete onClick={updateClientStatus}>
+                                    Yes, {status == 'Active' ? 'In Activate' : 'Activate'}
+                                </CustomButton>
+                            </Box>
+                        </Box>
+                    </ReusablePopup>
+                </Grid>
+            </Box>
+        </Box>
+    );
+}

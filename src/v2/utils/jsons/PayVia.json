@@ -1,0 +1,14 @@
+[
+    {
+        "id": "Cash",
+        "value": "Cash"
+    },
+    {
+        "id": "Cheque",
+        "value": "Cheque"
+    },
+    {
+        "id": "Payroll",
+        "value": "Payroll"
+    }
+]

@@ -1,0 +1,1801 @@
+[
+    {
+        "version": "0.27",
+        "date": "19/02/2024",
+        "time": "11:10",
+        "releaseNotes": {
+            "newFeatures": {
+                "title": "New Features",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description"
+                ],
+                "rows": []
+            },
+            "bugFixes": {
+                "title": "Bug Fixes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Payroll",
+                        "Jira": "WF-2568",
+                        "Description": "Changed the Client Name Text color and added info Icon",
+                        "Status": "Fixed"
+                    }                   
+                ]
+            },
+            "changesToPreviousRelease": {
+                "title": "Changes to previous release notes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Reminders",
+                        "Jira": "",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 2,
+                        "Module": "Notifications",
+                        "Jira": "",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 3,
+                        "Module": "Organization Configuration",
+                        "Jira": "WF-2568",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 4,
+                        "Module": "Dashboard",
+                        "Jira": "",
+                        "Description": "Dashboard API Integrations,Preview with dynamic data, Self Reminders Screen is on Hold",
+                        "Status": "Fixed"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "version": "0.26",
+        "date": "08/02/2024",
+        "time": "20:00",
+        "releaseNotes": {
+            "newFeatures": {
+                "title": "New Features",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description"
+                ],
+                "rows": []
+            },
+            "bugFixes": {
+                "title": "Bug Fixes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Placements",
+                        "Jira": "WF-2423, WF-2355, WF-1236, WF-2385, wF- 2457",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 2,
+                        "Module": "Sales",
+                        "Jira": "WF-2444,WF-1896,WF-2200,WF-2093",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 3,
+                        "Module": "Payroll",
+                        "Jira": "WF-2091,WF-1757,WF-2413,WF-2415,WF-2278,WF-2004,WF-1992",
+                        "Description": "",
+                        "Status": "Fixed" 
+                    },
+                    {
+                        "Sno": 4,
+                        "Module": "Timesheets",
+                        "Jira": "WF-2430",
+                        "Description": "",
+                        "Status": "Fixed" 
+                    },
+                    {
+                        "Sno": 4,
+                        "Module": "Ledgers",
+                        "Jira": "WF-2440",
+                        "Description": "",
+                        "Status": "Fixed" 
+                    }
+                ]
+            },
+            "changesToPreviousRelease": {
+                "title": "Changes to previous release notes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": []
+            }
+        }
+    },
+    {
+        "version": "0.25",
+        "date": "08/02/2024",
+        "time": "10:40",
+        "releaseNotes": {
+            "newFeatures": {
+                "title": "New Features",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description"
+                ],
+                "rows": []
+            },
+            "bugFixes": {
+                "title": "Bug Fixes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Placements",
+                        "Jira": "WF-1225,WF-2355,WF-1298,WF-1477,WF-1295,WF-2394,WF-2378,WF-2474,WF-2390,WF-1236,WF-1506,1408,WF-1403,WF-2374,WF-2435",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 2,
+                        "Module": "Clients",
+                        "Jira": "WF-1515",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 3,
+                        "Module": "Expense Management",
+                        "Jira": "WF-2368",
+                        "Description": "",
+                        "Status": "Fixed"
+                    }
+                ]
+            },
+            "changesToPreviousRelease": {
+                "title": "Changes to previous release notes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": []
+            }
+        }
+    },
+    {
+        "version": "0.24",
+        "date": "08/02/2024",
+        "time": "10:00",
+        "releaseNotes": {
+            "newFeatures": {
+                "title": "New Features",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description"
+                ],
+                "rows": []
+            },
+            "bugFixes": {
+                "title": "Bug Fixes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Payroll",
+                        "Jira": "WF-2024, WF-2304, WF-1757, WF-1811, WF-2307, WF-1781",
+                        "Description": "",
+                        "Status": "Fixed"
+                    }
+                ]
+            },
+            "changesToPreviousRelease": {
+                "title": "Changes to previous release notes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": []
+            }
+        }
+    },
+    {
+        "version": "0.23",
+        "date": "06/02/2024",
+        "time": "17:10",
+        "releaseNotes": {
+            "newFeatures": {
+                "title": "New Features",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description"
+                ],
+                "rows": []
+            },
+            "bugFixes": {
+                "title": "Bug Fixes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Sales",
+                        "Jira": "WF-1879, WF-2381, WF-2383, WF-1850, WF-2361, WF-2087, WF-1944, WF-1909, WF-1899, WF-1890, WF-1889, WF-1887, WF-1882, WF-1743, WF-1742, WF-1723",
+                        "Description": "",
+                        "Status": "Fixed"
+                    }
+                ]
+            },
+            "changesToPreviousRelease": {
+                "title": "Changes to previous release notes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": []
+            }
+        }
+    },
+    {
+        "version": "0.22",
+        "date": "05/02/2024",
+        "time": "17:10",
+        "releaseNotes": {
+            "newFeatures": {
+                "title": "New Features",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description"
+                ],
+                "rows": []
+            },
+            "bugFixes": {
+                "title": "Bug Fixes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "PayRoll",
+                        "Jira": "WF-2278,WF-2277",
+                        "Description": "",
+                        "Status": "Fixed"
+                    }
+                ]
+            },
+            "changesToPreviousRelease": {
+                "title": "Changes to previous release notes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Clients",
+                        "Jira": "",
+                        "Description": "Updated the Client Status",
+                        "Status": "Fixed" 
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "version": "0.21",
+        "date": "02/02/2024",
+        "time": "10:40",
+        "releaseNotes": {
+            "newFeatures": {
+                "title": "New Features",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description"
+                ],
+                "rows": []
+            },
+            "bugFixes": {
+                "title": "Bug Fixes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Sales",
+                        "Jira": " WF-2288  WF-2018, WF-2285, WF-1896, WF-1883, ",
+                        "Description": " ",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 2,
+                        "Module": "Placements",
+                        "Jira": "WF-2287,WF-2310,WF-2290",
+                        "Description": " ",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 3,
+                        "Module": "Employee Self Service",
+                        "Jira": "WF-2300",
+                        "Description": "Invite Via link Screen Modifications and API Integration",
+                        "Status": "Fixed"
+                    }
+                ]
+            },
+            "changesToPreviousRelease": {
+                "title": "Changes to previous release notes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": []
+            }
+        }
+    },
+    {
+        "version": "0.20",
+        "date": "1/02/2024",
+        "time": "10:30",
+        "releaseNotes": {
+            "newFeatures": {
+                "title": "New Features",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description"
+                ],
+                "rows": []
+            },
+            "bugFixes": {
+                "title": "Bug Fixes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Placements",
+                        "Jira": "WF-2287,WF-2290",
+                        "Description": " ",
+                        "Status": "Fixed"
+                    }
+                ]
+            },
+            "changesToPreviousRelease": {
+                "title": "Changes to previous release notes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": []
+            }
+        }
+    },
+    {
+        "version": "0.19",
+        "date": "1/02/2024",
+        "time": "10:30",
+        "releaseNotes": {
+            "newFeatures": {
+                "title": "New Features",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description"
+                ],
+                "rows": []
+            },
+            "bugFixes": {
+                "title": "Bug Fixes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Placements",
+                        "Jira": "WF-2270 ,WF-2222, WF-2242, WF-2246, WF-2224, WF-2267, WF-2287, WF-2286",
+                        "Description": " ",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 2,
+                        "Module": "Ledgers",
+                        "Jira": "WF-2239 , WF-2238, WF-2240",
+                        "Description": " ",
+                        "Status": "Fixed"
+                    }
+                ]
+            },
+            "changesToPreviousRelease": {
+                "title": "Changes to previous release notes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": []
+            }
+        }
+    },
+    {
+        "version": "0.18",
+        "date": "31/01/2024",
+        "time": "18:30",
+        "releaseNotes": {
+            "newFeatures": {
+                "title": "New Features",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description"
+                ],
+                "rows": []
+            },
+            "bugFixes": {
+                "title": "Bug Fixes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Sales",
+                        "Jira": "WF-2276",
+                        "Description": " ",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 2,
+                        "Module": "Placements",
+                        "Jira": "WF-2270 ,WF-2222, WF-2242, WF-2246, WF-2224, WF-2228",
+                        "Description": " ",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 3,
+                        "Module": "Ledgers",
+                        "Jira": "WF-2239 , WF-2238, WF-2240",
+                        "Description": " ",
+                        "Status": "Fixed"
+                    }
+                ]
+            },
+            "changesToPreviousRelease": {
+                "title": "Changes to previous release notes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": []
+            }
+        }
+    },
+    {
+        "version": "0.17",
+        "date": "31/01/2024",
+        "time": "17:30",
+        "releaseNotes": {
+            "newFeatures": {
+                "title": "New Features",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description"
+                ],
+                "rows": []
+            },
+            "bugFixes": {
+                "title": "Bug Fixes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Sales",
+                        "Jira": "  WF-2216,WF-1999, WF-2229,",
+                        "Description": " ",
+                        "Status": "Fixed"
+                    }
+                ]
+            },
+            "changesToPreviousRelease": {
+                "title": "Changes to previous release notes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": []
+            }
+        }
+    },
+    {
+        "version": "0.16",
+        "date": "31/01/2024",
+        "time": "10:34",
+        "releaseNotes": {
+            "newFeatures": {
+                "title": "New Features",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description"
+                ],
+                "rows": []
+            },
+            "bugFixes": {
+                "title": "Bug Fixes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Sales",
+                        "Jira": " WF-1841, WF-1750, WF-1756, WF-2248,",
+                        "Description": " ",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 2,
+                        "Module": "Timesheets",
+                        "Jira": " WF-2237, WF-2250, WF-2204 ",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 3,
+                        "Module": "Placements",
+                        "Jira": "WF-2203, WF-2215, WF-2217, WF-2218, WF-2220, WF-2222, WF-2071, WF-2201, WF-1275, WF-1286, WF-1772, WF-2022, WF-2055,WF-1286,WF-2055,WF-2254",
+                        "Description": "",
+                        "Status": "Fixed"
+                    }
+                ]
+            },
+            "changesToPreviousRelease": {
+                "title": "Changes to previous release notes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": []
+            }
+        }
+    },
+    {
+        "version": "0.15",
+        "date": "30/01/2024",
+        "time": "16:48",
+        "releaseNotes": {
+            "newFeatures": {
+                "title": "New Features",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description"
+                ],
+                "rows": []
+            },
+            "bugFixes": {
+                "title": "Bug Fixes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Sales",
+                        "Jira": "WF-1729, WF-1744, WF-1756,WF-1758, WF-1840, WF-1884, WF-1899, WF-1999, WF-2001, WF-2009, WF-1900, WF-2078, WF-2017, WF-1888, WF-2000, WF-1910, WF-2247 ",
+                        "Description": " updated validations of customer note and terms and conditions in bills and invoice",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 2,
+                        "Module": "Timesheets",
+                        "Jira": "WF-1976, WF-1727,",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 3,
+                        "Module": "Placements",
+                        "Jira": "WF-2203, WF-2215, WF-2217, WF-2218, WF-2220, WF-2222, WF-2071, WF-2201, WF-1275, WF-1286, WF-1772, WF-2022, WF-2055, WF-2217, WF-2071,WF-1859,WF-2242,WF-1880",
+                        "Description": "",
+                        "Status": "Fixed"
+                    }
+                ]
+            },
+            "changesToPreviousRelease": {
+                "title": "Changes to previous release notes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": []
+            }
+        }
+    },
+    {
+        "version": "0.14",
+        "date": "29/01/2024",
+        "time": "18:00",
+        "releaseNotes": {
+            "newFeatures": {
+                "title": "New Features",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description"
+                ],
+                "rows": []
+            },
+            "bugFixes": {
+                "title": "Bug Fixes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Timesheets",
+                        "Jira": "WF-2077, WF-2207",
+                        "Description": "WF-2077 jira done, added next cycle date in add timesheet, ",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 2,
+                        "Module": "Sales",
+                        "Jira": "WF-2208, WF-2003, WF-1728, WF-1740,  WF-2100, WF-2093, WF-2005 ",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 3,
+                        "Module": "sidebar",
+                        "Jira": "",
+                        "Description": "fixed sidebar scrolling issue",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 4,
+                        "Module": "Placements",
+                        "Jira": "WF-1967, WF-1905, WF-1663, WF-1974,WF-1905",
+                        "Description": "",
+                        "Status": "Fixed"
+                    }
+                ]
+            },
+            "changesToPreviousRelease": {
+                "title": "Changes to previous release notes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Employee",
+                        "Jira": "",
+                        "Description": "Employee View Profile",
+                        "Status": ""
+                    },
+                    {
+                        "Sno": 2,
+                        "Module": "Sales",
+                        "Jira": "",
+                        "Description": "Updated  Update Invoice Button to Update in Invoice and Update bill to Update in Bills",
+                        "Status": ""
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "version": "0.13",
+        "date": "28/01/2024",
+        "time": "23:29",
+        "releaseNotes": {
+            "newFeatures": {
+                "title": "New Features",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Client",
+                        "Jira": "WF-1784",
+                        "Description": "",
+                        "Status": "Fixed"
+                    }
+                ]
+            },
+            "bugFixes": {
+                "title": "Bug Fixes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Placements",
+                        "Jira": "WF-1964 ,WF-2088,WF-1908, WF-1308, WF-2060,WF-2060,WF-1964 ,WF-2088,WF-1908, WF-1308,WF-1784 ",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 2,
+                        "Module": "Payroll",
+                        "Jira": "WF-1986,WF-1987,WF-1984,WF-1983,WF-1965,WF-1956,WF-1952,WF-1947,WF-1941,WF-1822,WF-1785,WF-1746,WF-1990, WF-2048",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 3,
+                        "Module": "Employee Self Service",
+                        "Jira": "WF-1520,WF-1550",
+                        "Description": "",
+                        "Status": "Fixed"
+                    }
+                ]
+            },
+            "changesToPreviousRelease": {
+                "title": "Changes to previous release notes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": []
+            }
+        }
+    },
+    {
+        "version": "0.12",
+        "date": "25/01/2024",
+        "time": "18:30",
+        "releaseNotes": {
+            "newFeatures": {
+                "title": "New Features",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Description"
+                ],
+                "rows": []
+            },
+            "bugFixes": {
+                "title": "Bug Fixes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Placements",
+                        "Jira": "WF-2061,WF-2059",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 2,
+                        "Module": "Payroll",
+                        "Jira": "WF-1986,WF-1987,WF-1984,WF-1983,WF-1965,WF-1956,WF-1952,WF-1947,WF-1941,WF-1822,WF-1785,WF-1746,WF-1990, WF-2048",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 1,
+                        "Module": "Sales",
+                        "Jira": " WF-1866, WF-2017,WF-1734,WF-1758, WF-1958, WF-1713,  WF-1732, WF-1737, WF-2012,",
+                        "Description": "",
+                        "Status": "Fixed"
+                    }
+                ]
+            },
+            "changesToPreviousRelease": {
+                "title": "Changes to previous release notes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": []
+            }
+        }
+    },
+    {
+        "version": "0.11",
+        "date": "25/01/2024",
+        "time": "00:05",
+        "releaseNotes": {
+            "newFeatures": {
+                "title": "New Features",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Description"
+                ],
+                "rows": []
+            },
+            "bugFixes": {
+                "title": "Bug Fixes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Placements",
+                        "Jira": "WF-1311,WF-1316,WF-1310,WF-1304,WF-1284,WF-1855,WF-1681,WF-1288",
+                        "Description": "",
+                        "Status": "Fixed"
+                    }
+                ]
+            },
+            "changesToPreviousRelease": {
+                "title": "Changes to previous release notes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": []
+            }
+        }
+    },
+    {
+        "version": "0.10",
+        "date": "24/01/2024",
+        "time": "18:06",
+        "releaseNotes": {
+            "newFeatures": {
+                "title": "New Features",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Description"
+                ],
+                "rows": []
+            },
+            "bugFixes": {
+                "title": "Bug Fixes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Payroll",
+                        "Jira": "WF-2049, WF-2048, WF-2031, WF-2033, WF-2029, WF-2027, WF-2026, WF-2002, WF-2019, WF-2016, WF-2013, WF-2004, WF-2002, WF-1995, WF-1994, WF-1993, WF-1992, WF-1989",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 2,
+                        "Module": "Expense Management",
+                        "Jira": "WF-2065, WF-1400",
+                        "Description": "",
+                        "Status": "Fixed"
+                    }
+                ]
+            },
+            "changesToPreviousRelease": {
+                "title": "Changes to previous release notes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": []
+            }
+        }
+    },
+    {
+        "version": "0.9",
+        "date": "24/01/2024",
+        "time": "16:10",
+        "releaseNotes": {
+            "newFeatures": {
+                "title": "New Features",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Description"
+                ],
+                "rows": []
+            },
+            "bugFixes": {
+                "title": "Bug Fixes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Timesheets",
+                        "Jira": "WF-2057, WF-2053, WF-2050",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 2,
+                        "Module": "Sales",
+                        "Jira": "WF-1844,WF-1845,WF-1854,WF-1862, WF-2007",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 3,
+                        "Module": "Placements",
+                        "Jira": "WF-1288",
+                        "Description": "",
+                        "Status": "Fixed"
+                    }
+                ]
+            },
+            "changesToPreviousRelease": {
+                "title": "Changes to previous release notes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": []
+            }
+        }
+    },
+    {
+        "version": "0.8",
+        "date": "24/01/2024",
+        "time": "10:28",
+        "releaseNotes": {
+            "newFeatures": {
+                "title": "New Features",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Description"
+                ],
+                "rows": []
+            },
+            "bugFixes": {
+                "title": "Bug Fixes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Timesheets",
+                        "Jira": "WF-1665, WF-2011, WF-1976,",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 2,
+                        "Module": "Timesheets",
+                        "Jira": "",
+                        "Description": "added validation for comment to reject timesheet in Pending for approval and removed unnecessary columns in Pending timesheet table",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 3,
+                        "Module": "Placements",
+                        "Jira": "WF-1967,WF-1880,WF-1932,WF-2010,WF-1969,WF-1968,WF-1967,WF-1936,WF-1932,WF-1864,WF-1855,WF-1843,WF-2031,WF-2023,WF-1968,WF-1932,WF-1864,WF-1855,WF-1843,WF-2031,WF-2023, WF-1685, WF-2008,WF-1974,WF-1927,WF-1924,WF-1504, WF- 1911 - Not an issue,WF-1304,WF-1915, WF-1524,WF-1514,WF-1512,WF-1472,WF-1355",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 4,
+                        "Module": "Expense Management",
+                        "Jira": "WF-2020, WF-1473, WF-1420, WF-1404, WF-1400, WF-1364, WF-1361, WF-1357, WF-1575, WF-1542, WF-1395, WF-1536",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 5,
+                        "Module": "Timesheets",
+                        "Jira": "",
+                        "Description": "Fixed generating invoice from timesheet",
+                        "Status": "Fixed"
+                    }
+                ]
+            },
+            "changesToPreviousRelease": {
+                "title": "Changes to previous release notes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": []
+            }
+        }
+    },
+    {
+        "version": "0.7",
+        "date": "23/01/2024",
+        "time": "00:15",
+        "releaseNotes": {
+            "newFeatures": {
+                "title": "New Features",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Description"
+                ],
+                "rows": []
+            },
+            "bugFixes": {
+                "title": "Bug Fixes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Placements",
+                        "Jira": "WF-1966, WF-1967, WF-1968, WF-1970, WF-1971, WF-1972, WF-1974, WF-1975, WF-1977, WF-1863, WF-1859, WF-1858, WF-1853, WF-1678, WF-1880",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 2,
+                        "Module": "Ledgers",
+                        "Jira": "WF-1980,WF-1979",
+                        "Description": "",
+                        "Status": "Fixed"
+                    }
+                ]
+            },
+            "changesToPreviousRelease": {
+                "title": "Changes to previous release notes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": []
+            }
+        }
+    },
+    {
+        "version": "0.6",
+        "date": "22/01/2024",
+        "time": "09:00",
+        "releaseNotes": {
+            "newFeatures": {
+                "title": "New Features",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Description"
+                ],
+                "rows": []
+            },
+            "bugFixes": {
+                "title": "Bug Fixes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Ledgers",
+                        "Jira": "WF-1979,WF-1980",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 2,
+                        "Module": "Placements",
+                        "Jira": "WF-1863,WF-1859,WF-1858,WF-1853,WF-1678,WF-1880",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 3,
+                        "Module": "Sales",
+                        "Jira": "WF-1962,WF-1959,WF-1951,WF-1948",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 4,
+                        "Module": "Timesheets",
+                        "Jira": "",
+                        "Description": "Redirection Issue while Generating the Invoice",
+                        "Status": "Fixed"
+                    }
+                ]
+            },
+            "changesToPreviousRelease": {
+                "title": "Changes to previous release notes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Sales-Invoice",
+                        "Jira": "",
+                        "Description": "Auto-populating Netpayterms & Description Field",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 2,
+                        "Module": "Placements",
+                        "Jira": "",
+                        "Description": "Timesheets View - Showing Snack bar if data is not available",
+                        "Status": "Fixed"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "version": "0.5",
+        "date": "22/01/2024",
+        "time": "09:00",
+        "releaseNotes": {
+            "newFeatures": {
+                "title": "New Features",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Description"
+                ],
+                "rows": []
+            },
+            "bugFixes": {
+                "title": "Bug Fixes",
+                "columns": [
+                    "Sno",
+                    "Issue",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Issue": "Ledgers",
+                        "Jira": "WF-1957,WF-1960",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 2,
+                        "Issue": "Placements",
+                        "Jira": "",
+                        "Description": "WF-1920, WF-1960, WF-1957,WF-11880,  WF-1878,WF-1877, WF-1876, WF-1874,WF-1872, WF-1869, WF-1868, WF-1867, WF-1865, WF-1863,WF-1861, WF-1860,WF-1859, WF-1858, WF-1857,WF-1856,WF-1855,WF-1853,WF-1839,WF-1837,WF-1832,WF-1831,WF-1830,WF-1828,WF-1827,WF-1774,WF-1772,WF-1771,WF-1748,WF-1747,WF-1861,WF-1675,WF-1599,WF-1554,WF-1553,WF-1518,WF-1504,WF-1472,WF-1466,WF-1717,WF-1678,WF-1675",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 3,
+                        "Issue": "Timesheet",
+                        "Jira": "WF-1765, WF-1768, WF-1770,WF-1716",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 4,
+                        "Issue": "Sales",
+                        "Jira": "WF-1741,WF-1738, WF-1737, WF-1736,WF-1735, WF-1734, WF-1732, WF-1731,WF-1726, WF-1723,WF-1713, WF-1715, WF-1719, WF-1743, WF-1709, WF-1711,",
+                        "Description": "",
+                        "Status": "Fixed"
+                    }
+                ]
+            },
+            "changesToPreviousRelease": {
+                "title": "Changes to previous release notes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Description"
+                ],
+                "rows": []
+            }
+        }
+    },
+    {
+        "version": "0.4",
+        "date": "18/01/2024",
+        "time": "17:00",
+        "releaseNotes": {
+            "newFeatures": {
+                "title": "New Features",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Description"
+                ],
+                "rows": []
+            },
+            "bugFixes": {
+                "title": "Bug Fixes",
+                "columns": [
+                    "Sno",
+                    "Issue",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Issue": "Client",
+                        "Jira": "WF-1829,WF-1826,WF-1824,WF-1786,WF-1648,WF-1601,WF-1780, WF-1775, ",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 2,
+                        "Issue": "Client",
+                        "Jira": "",
+                        "Description": "Multi-selecting dropdown issue fixed in clients module (search and selecting the option)",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 3,
+                        "Issue": "Placements",
+                        "Jira": " WF-1466, WF-1661, ",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 4,
+                        "Issue": "Invoice",
+                        "Jira": "WF-1725",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 5,
+                        "Issue": "Timesheets",
+                        "Jira": " WF-1752, WF-1733",
+                        "Description": "",
+                        "Status": "Fixed"
+                    }
+                ]
+            },
+            "changesToPreviousRelease": {
+                "title": "Changes to previous release notes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Description"
+                ],
+                "rows": []
+            }
+        }
+    },
+    {
+        "version": "0.3",
+        "date": "17/01/2024",
+        "time": "13:00",
+        "releaseNotes": {
+            "newFeatures": {
+                "title": "New Features",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Description"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Client",
+                        "Description": "In Table Listing Changed the Mobile Number Column instead of Contact Number"
+                    }
+                ]
+            },
+            "bugFixes": {
+                "title": "Bug Fixes",
+                "columns": [
+                    "Sno",
+                    "Issue",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Issue": "Placement",
+                        "Jira": "WF-1751,WF-1724,WF-1721,WF-1684,WF-1648,WF-1601,WF-1600,WF-1529,WF-1266",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 2,
+                        "Issue": "Expense Management",
+                        "Jira": "WF-1659,WF-1658,WF-1657,WF-1656",
+                        "Description": "Change of Header Label name in view screen",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 3,
+                        "Issue": "Invoice",
+                        "Jira": "",
+                        "Description": "In New Invoice Changed the format of Hours field",
+                        "Status": "Fixed"
+                    }
+                ]
+            },
+            "changesToPreviousRelease": {
+                "title": "Changes to previous release notes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Description"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Client",
+                        "Description": "Save & Update Button Changes in Timesheet View Screen"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "version": "0.2",
+        "date": "12/01/2024",
+        "time": "13:20",
+        "releaseNotes": {
+            "newFeatures": {
+                "title": "New Features",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Description"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Clients",
+                        "Description": " Invoice, Payment and consultant Table API integration Done in Client Transactions"
+                    },
+                    {
+                        "Sno": 2,
+                        "Module": "Vendors",
+                        "Description": " Bills, Payment and consultant Table API integration Done in Vendors Transactions"
+                    }
+                ]
+            },
+            "bugFixes": {
+                "title": "Bug Fixes",
+                "columns": [
+                    "Sno",
+                    "Issue",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Issue": "Sales - Invoice",
+                        "Jira": "",
+                        "Description": "Not showing balance amount, sub total amout and total amount when amout is 0",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 2,
+                        "Issue": "Sales - Bills",
+                        "Jira": "",
+                        "Description": "Not showing balance amount, sub total amout and total amount when amout is 0",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 3,
+                        "Issue": "Employees",
+                        "Jira": "",
+                        "Description": "Blocker when clicking on sales from employee view profile screens",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 4,
+                        "Issue": "Payroll",
+                        "Jira": "",
+                        "Description": "Added payroll link in sidebar",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 5,
+                        "Issue": "Sign-up screen",
+                        "Jira": "",
+                        "Description": "Modified API for OTP Screen in Sign-up",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 6,
+                        "Issue": "Sidebar",
+                        "Jira": "",
+                        "Description": "Added Payroll Module in to the sidebar",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 7,
+                        "Issue": "Client View",
+                        "Jira": "",
+                        "Description": "Modified the Profile picture API in Client,vendor and End",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 8,
+                        "Issue": "Employee Self Service",
+                        "Jira": "",
+                        "Description": "Updated Profile picture for Employess in Chat panel",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 9,
+                        "Issue": "Billing Details",
+                        "Jira": "",
+                        "Description": "Updated OT Pay rate Multiplier spelling in Placement",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 10,
+                        "Issue": "Add placements view",
+                        "Jira": "",
+                        "Description": "Updated the Profile picture in",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 11,
+                        "Issue": "",
+                        "Jira": " WF-1401",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 12,
+                        "Issue": "",
+                        "Jira": "WF-1385",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 13,
+                        "Issue": "Not an issue",
+                        "Jira": "WF-1660",
+                        "Description": "Based on selection of client end-client will be auto populated if end-client added in the placement",
+                        "Status": ""
+                    },
+                    {
+                        "Sno": 14,
+                        "Issue": "",
+                        "Jira": "WF-1666",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 15,
+                        "Issue": "",
+                        "Jira": "WF-1682",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 16,
+                        "Issue": "",
+                        "Jira": "WF-1687",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 17,
+                        "Issue": "",
+                        "Jira": "WF-1712",
+                        "Description": "",
+                        "Status": "Fixed"
+                    }
+                ]
+            },
+            "changesToPreviousRelease": {
+                "title": "Changes to previous release notes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Description"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Placements",
+                        "Description": "Added New Button Style which replicates in Placements - Client&Endclient Form (Back - Button)"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "version": "0.1",
+        "date": "10/01/2024",
+        "time": "19:00",
+        "releaseNotes": {
+            "newFeatures": {
+                "title": "New Features",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Description"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Module": "Ledgers",
+                        "Description": "A recent module has been introduced in alignment with the specified requirements. Please refer to the Business Requirements Document (BRD) for more details. This module is now integrated into the left navigation bar. Within this module, you will discover information about Payments Received against the invoices and Payments Paid against the Bills."
+                    },
+                    {
+                        "Sno": 2,
+                        "Module": "Sales",
+                        "Description": "A recent addition has been made in accordance with the specified requirements. Please consult the Business Requirements Document (BRD) for details. This newly implemented module is now integrated into the left navigation bar. Within this module, you can access features such as creating, editing, and viewing both Invoices and Bills."
+                    },
+                    {
+                        "Sno": 3,
+                        "Module": "Payroll",
+                        "Description": "A recent module has been introduced in alignment with the specified requirements. Please refer to the Business Requirements Document (BRD) for more details. This module is now integrated into the left navigation bar. Within this module, you will discover information about Payroll Generate, View, Run."
+                    },
+                    {
+                        "Sno": 4,
+                        "Module": "Balance Sheet",
+                        "Description": "A recent module has been introduced in alignment with the specified requirements. Please refer to the Business Requirements Document (BRD) for more details. This module is now integrated into the left navigation bar. Within this module, you will discover information about Balance sheet information about the Consultants/Contractors."
+                    }
+                ]
+            },
+            "bugFixes": {
+                "title": "Bug Fixes",
+                "columns": [
+                    "Sno",
+                    "Issue",
+                    "Jira",
+                    "Description",
+                    "Status"
+                ],
+                "rows": [
+                    {
+                        "Sno": 1,
+                        "Issue": "Placement Bugs",
+                        "Jira": "",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 2,
+                        "Issue": "Employee Self Service Bugs",
+                        "Jira": "",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 3,
+                        "Issue": "Timesheets Bugs",
+                        "Jira": "",
+                        "Description": "",
+                        "Status": "Fixed"
+                    },
+                    {
+                        "Sno": 4,
+                        "Issue": "Balance sheet Bugs",
+                        "Jira": "",
+                        "Description": "",
+                        "Status": "Fixed"
+                    }
+                ]
+            },
+            "changesToPreviousRelease": {
+                "title": "Changes to previous release notes",
+                "columns": [
+                    "Sno",
+                    "Module",
+                    "Description"
+                ],
+                "rows": []
+            }
+        }
+    }
+]

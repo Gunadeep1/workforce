@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "value": "List view"
+    },
+    {
+        "id": 2,
+        "value": "Weekly view"
+    },
+    {
+        "id": 3,
+        "value": "Calender view"
+    }
+]

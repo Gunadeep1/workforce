@@ -1,0 +1,8 @@
+- name: copy files to destination
+  hosts: workforce
+  become: yes
+  tasks:
+    - name: Deploying 
+      copy:
+        src: /var/lib/jenkins/workspace/WORKFORCE_FRONTEND/build
+        dest: /home/workforce/workforce-frontend/

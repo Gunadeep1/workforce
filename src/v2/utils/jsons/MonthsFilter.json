@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "value": "This Month"
+    },
+    {
+        "id": 2,
+        "value": "Last Month"
+    },
+    {
+        "id": 3,
+        "value": "Last 6 Months"
+    },
+    {
+        "id": 4,
+        "value": "1 Year"
+    },
+    {
+        "id": 5,
+        "value": "Custom"
+    }
+]

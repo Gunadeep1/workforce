@@ -1,0 +1,10 @@
+[
+    {
+        "id": "savings",
+        "value": "Savings"
+    },
+    {
+        "id": "current",
+        "value": "Current"
+    }
+]
