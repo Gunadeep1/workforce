@@ -1,0 +1,22 @@
+[
+    {
+      "id": 1,
+      "value": "Weekly"
+    },
+    {
+      "id": 2,
+      "value": "Bi-Weekly"
+    },
+    {
+      "id": 3,
+      "value": "Semi-Monthly"
+    },
+    {
+      "id": 4,
+      "value": "Monthly"
+    },
+    {
+      "id": 5,
+      "value": "All"
+    }
+  ]

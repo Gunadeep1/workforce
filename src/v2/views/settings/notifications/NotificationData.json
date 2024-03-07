@@ -1,0 +1,51 @@
+[
+    {
+        "slug":"invoice",
+        "title": "Invoice Created",
+        "description": "INV-007 has been created on 12/02/2023",
+        "time":"11:23am",
+        "date":"11-sep-23"
+    },
+    {
+        "slug":"client",
+        "title": "Client Has Been Created",
+        "description": "Description added",
+        "time":"11:23am",
+        "date":"11-sep-23"
+    },
+    {
+        "slug":"document",
+        "title": "Documents Related",
+        "description": "Description added",
+        "time":"11:23am",
+        "date":"11-sep-23"
+    },
+    {
+        "slug":"timesheet",
+        "title": "Time sheets Related",
+        "description": "Description added",
+        "time":"11:23am",
+        "date":"11-sep-23"
+    },
+    {
+        "slug":"payroll",
+        "title": "Payroll Related",
+        "description": "Description added",
+        "time":"11:23am",
+        "date":"11-sep-23"
+    },
+    {
+        "slug":"ess",
+        "title": "ESS Related",
+        "description": "Description added",
+        "time":"11:23am",
+        "date":"11-sep-23"
+    },
+    {
+        "slug":"expense",
+        "title": "Expenses Related",
+        "description": "Description added",
+        "time":"11:23am",
+        "date":"11-sep-23"
+    }
+]
